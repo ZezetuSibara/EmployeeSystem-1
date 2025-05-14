@@ -1,11 +1,10 @@
-import { Component, Inject, NgModule } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { MAT_DIALOG_DATA, MatDialog, MatDialogActions, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogActions, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
-import { ShowEmployeeComponent } from '../show-employee/show-employee.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
-import { Employee } from '../employee/employee';
+import { Employee } from '../employee';
 
 @Component({
   selector: 'app-employee-add-dialog',
@@ -18,7 +17,7 @@ import { Employee } from '../employee/employee';
     ReactiveFormsModule,
     MatFormField,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   templateUrl: './employee-add-dialog.component.html',
   styleUrl: './employee-add-dialog.component.css'

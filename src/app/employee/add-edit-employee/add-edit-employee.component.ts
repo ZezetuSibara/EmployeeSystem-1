@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, NgModule  } from '@angular/core';
 import { ApiserviceService } from '../../apiservice.service';
-import { ShowEmployeeComponent } from '../../show-employee/show-employee.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 

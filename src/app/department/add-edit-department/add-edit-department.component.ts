@@ -10,33 +10,33 @@ export class AddEditDepartmentComponent implements OnInit {
 
   constructor(private service: ApiserviceService) { }
 
-  @Input() depart: any;
+  @Input() department: any;
   DepartmentId = "";
   DepartmentName = "";
 
   ngOnInit(): void {
 
-    this.DepartmentId = this.depart.DepartmentId;
-    this.DepartmentName = this.depart.DepartmentName;
+    this.DepartmentId = this.department.DepartmentId;
+    this.DepartmentName = this.department.DepartmentName;
   }
 
   addDepartment() {
-    var dept = {
+    var department = {
       DepartmentId: this.DepartmentId,
       DepartmentName: this.DepartmentName
     };
-    this.service.addDepartment(dept).subscribe(res => {
+    /*this.service.addDepartment(dept).subscribe(res => {
       alert(res.toString());
-    });
+    });*/
   }
 
   updateDepartment() {
-    var dept = {
+    var department = {
       DepartmentId: this.DepartmentId,
       DepartmentName: this.DepartmentName
     };
-    this.service.updateDepartment(dept).subscribe(res => {
+    /*this.service.updateDepartment(dept).subscribe(res => {
       alert(res.toString());
-    });
+    });*/
   }
 }

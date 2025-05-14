@@ -6,7 +6,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DepartmentComponent} from './department/department.component';
-import { ShowDepartmentComponent } from './department/show-department/show-department.component';
 import { AddEditDepartmentComponent } from './department/add-edit-department/add-edit-department.component';
 import { ApiserviceService } from './apiservice.service';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -16,9 +15,7 @@ import { DepartmentAddDialogComponent } from './department/department-add-dialog
 import { EmployeeComponentComponent } from './employee/employee.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { EmployeeAddDialogComponent } from './employee-add-dialog/employee-add-dialog.component';
-import { ShowEmployeeComponent } from './show-employee/show-employee.component';
-
+import { EmployeeAddDialogComponent } from './employee/employee-add-dialog/employee-add-dialog.component';
 
 
 @NgModule({
@@ -39,8 +36,6 @@ import { ShowEmployeeComponent } from './show-employee/show-employee.component';
     MatButtonModule,
     BrowserAnimationsModule,
     DepartmentComponent,
-    ShowDepartmentComponent,
-    ShowEmployeeComponent,
     AddEditDepartmentComponent,
     DepartmentAddDialogComponent,
     EmployeeAddDialogComponent,

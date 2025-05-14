@@ -5,7 +5,7 @@ import { Employee } from './employee';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { EmployeeAddDialogComponent } from '../employee-add-dialog/employee-add-dialog.component';
+import { EmployeeAddDialogComponent } from './employee-add-dialog/employee-add-dialog.component';
 
 
 @Component({
